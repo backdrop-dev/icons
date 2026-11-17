@@ -1,0 +1,37 @@
+{
+	"name": "backdrop-dev/icons",
+	"description": "Iconoir SVG icons for ClassicPress and WordPress themes and plugins, with helpers to output accessible inline icons. Built for Backdrop.",
+	"type": "library",
+	"keywords": [ "classicpress", "icons", "svg", "iconoir", "backdrop" ],
+	"homepage": "https://github.com/backdrop-dev/icons",
+	"license": "GPL-2.0-or-later",
+	"authors": [
+		{
+			"name": "Benjamin Lu",
+			"homepage": "https://github.com/techkodeninja"
+		}
+	],
+	"require": {
+		"php": ">=7.4",
+		"backdrop-dev/framework": "^2.0"
+	},
+	"require-dev": {
+		"phpunit/phpunit": "^9.6"
+	},
+	"autoload": {
+		"psr-4": {
+			"Backdrop\\Icons\\": "src/"
+		},
+		"files": [
+			"src/functions.php"
+		]
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"Backdrop\\Icons\\Tests\\": "tests/"
+		}
+	},
+	"config": {
+		"sort-packages": true
+	}
+}
